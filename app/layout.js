@@ -6,7 +6,7 @@ const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const shoulders = Big_Shoulders({ variable: "--font-shoulders", subsets: ["latin"], weight: ["700", "800"] });
 const kalam = Kalam({ variable: "--font-kalam", subsets: ["latin"], weight: "400" });
 
-const __jsonld = {"@context":"https://schema.org","@type":"CreativeWork","name":"Konsep redesain landing page Sribu (tidak resmi)","description":"Latihan desain ulang untuk portofolio; tidak berafiliasi dengan Sribu.","url":"https://landing-sribu.vercel.app","inLanguage":"id","creator":{"@type":"Organization","name":"PintuWeb","url":"https://www.pintuweb.com"}};
+const __jsonld = {"@context":"https://schema.org","@type":"CreativeWork","name":"Konsep redesain landing page Sribu (tidak resmi)","description":"Latihan desain ulang untuk portofolio; tidak berafiliasi dengan Sribu.","url":"https://landing-sribu.vercel.app","inLanguage":"id","creator":{"@type":"Organization","name":"PintuWeb","url":"https://www.pintuweb.id"}};
 
 export const metadata = {
   metadataBase: new URL("https://landing-sribu.vercel.app"),
@@ -14,7 +14,7 @@ export const metadata = {
   description: "Konsep redesain tidak resmi landing page Sribu oleh PintuWeb: kontes desain sebagai sayembara, dengan simulasi “Coba jadi juri”. Tidak berafiliasi dengan Sribu.",
   applicationName: "Konsep Redesain Sribu",
   keywords: ["konsep redesain", "redesain landing page", "studi kasus UI", "kontes desain", "portofolio web"],
-  authors: [{ name: "PintuWeb", url: "https://www.pintuweb.com" }],
+  authors: [{ name: "PintuWeb", url: "https://www.pintuweb.id" }],
   creator: "PintuWeb",
   publisher: "PintuWeb",
   alternates: { canonical: "https://landing-sribu.vercel.app" },

@@ -32,7 +32,7 @@ export function SiteFooter() {
         <div>
           <p className="font-[family-name:var(--font-shoulders)] text-3xl font-extrabold uppercase tracking-wide">Sribu · konsep</p>
           <p className="mt-4 max-w-lg text-sm leading-relaxed text-cream/80">
-            Halaman ini adalah latihan desain ulang untuk portofolio, dibuat oleh <a href="https://www.pintuweb.com" className="font-semibold text-cream underline underline-offset-2">PintuWeb</a>. Nama Sribu milik pemiliknya. Kontes, desainer, karya, dan angka di sini fiktif dan tidak menggambarkan layanan, harga, atau kebijakan Sribu.
+            Halaman ini adalah latihan desain ulang untuk portofolio, dibuat oleh <a href="https://www.pintuweb.id" className="font-semibold text-cream underline underline-offset-2">PintuWeb</a>. Nama Sribu milik pemiliknya. Kontes, desainer, karya, dan angka di sini fiktif dan tidak menggambarkan layanan, harga, atau kebijakan Sribu.
           </p>
         </div>
         <nav aria-label="Halaman">
