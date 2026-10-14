@@ -2,7 +2,7 @@
 
 Konsep redesain tidak resmi landing page Sribu oleh PintuWeb: kontes desain sebagai sayembara, dengan simulasi “Coba jadi juri”. **Tidak berafiliasi dengan Sribu.**
 
-**Demo live:** https://landing-sribu.vercel.app
+**Demo live:** https://landing-sribu.pintuweb.id
 
 ![Tangkapan layar Sribu](public/og.jpg)
 

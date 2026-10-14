@@ -6,10 +6,10 @@ const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const shoulders = Big_Shoulders({ variable: "--font-shoulders", subsets: ["latin"], weight: ["700", "800"] });
 const kalam = Kalam({ variable: "--font-kalam", subsets: ["latin"], weight: "400" });
 
-const __jsonld = {"@context":"https://schema.org","@type":"CreativeWork","name":"Konsep redesain landing page Sribu (tidak resmi)","description":"Latihan desain ulang untuk portofolio; tidak berafiliasi dengan Sribu.","url":"https://landing-sribu.vercel.app","inLanguage":"id","creator":{"@type":"Organization","name":"PintuWeb","url":"https://www.pintuweb.id"}};
+const __jsonld = {"@context":"https://schema.org","@type":"CreativeWork","name":"Konsep redesain landing page Sribu (tidak resmi)","description":"Latihan desain ulang untuk portofolio; tidak berafiliasi dengan Sribu.","url":"https://landing-sribu.pintuweb.id","inLanguage":"id","creator":{"@type":"Organization","name":"PintuWeb","url":"https://www.pintuweb.id"}};
 
 export const metadata = {
-  metadataBase: new URL("https://landing-sribu.vercel.app"),
+  metadataBase: new URL("https://landing-sribu.pintuweb.id"),
   title: { default: "Sribu — Konsep Redesain Tidak Resmi", template: "%s — Konsep Redesain Sribu" },
   description: "Konsep redesain tidak resmi landing page Sribu oleh PintuWeb: kontes desain sebagai sayembara, dengan simulasi “Coba jadi juri”. Tidak berafiliasi dengan Sribu.",
   applicationName: "Konsep Redesain Sribu",
@@ -17,11 +17,11 @@ export const metadata = {
   authors: [{ name: "PintuWeb", url: "https://www.pintuweb.id" }],
   creator: "PintuWeb",
   publisher: "PintuWeb",
-  alternates: { canonical: "https://landing-sribu.vercel.app" },
+  alternates: { canonical: "https://landing-sribu.pintuweb.id" },
   openGraph: {
     type: "website",
     locale: "id_ID",
-    url: "https://landing-sribu.vercel.app",
+    url: "https://landing-sribu.pintuweb.id",
     siteName: "Konsep Redesain Sribu",
     title: "Sribu — Konsep Redesain Tidak Resmi",
     description: "Konsep redesain tidak resmi landing page Sribu oleh PintuWeb: kontes desain sebagai sayembara, dengan simulasi “Coba jadi juri”. Tidak berafiliasi dengan Sribu.",
