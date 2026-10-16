@@ -19,7 +19,7 @@ export default function Penjurian() {
   const TAHAP = ['Tandai finalis', 'Tetapkan pemenang', 'Selesai'];
 
   return (
-    <section id="juri" aria-labelledby="juri-h" className="scroll-mt-28 bg-cream-2 px-6 py-20 md:py-28">
+    <section id="juri" aria-labelledby="juri-h" className="scroll-mt-28 bg-cream-2 px-6 py-16 md:py-28">
       <div className="mx-auto max-w-6xl">
         <div className="grid gap-8 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)] lg:items-end">
           <div>
@@ -53,30 +53,31 @@ export default function Penjurian() {
           </div>
         </div>
 
-        <ul className="mt-8 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        {/* Ponsel: dua kolom seperti lembar kontak, supaya sembilan karya tidak memanjang belasan layar. */}
+        <ul className="mt-6 grid grid-cols-2 gap-3 sm:mt-8 sm:gap-5 lg:grid-cols-3">
           {KARYA.map((k) => {
             const fin = finalis.includes(k.no);
             const redup = tahap > 1 && !fin;
             return (
-              <li key={k.no} className={`relative border bg-white p-4 transition-opacity ${fin ? 'border-ember' : 'border-arena/15'} ${redup ? 'opacity-45' : ''}`}>
+              <li key={k.no} className={`relative flex flex-col border bg-white p-2.5 transition-opacity sm:p-4 ${fin ? 'border-ember' : 'border-arena/15'} ${redup ? 'opacity-45' : ''}`}>
                 <Karya gaya={k.gaya} uid={`juri-${k.no}`} label={`Karya nomor ${k.no} oleh ${k.oleh}`} />
-                <div className="mt-3 flex items-baseline justify-between gap-3">
-                  <span className="entry-no font-[family-name:var(--font-shoulders)] text-3xl text-arena">No. {no(k.no)}</span>
-                  <span className="text-sm">{k.oleh}</span>
+                <div className="mt-2 flex flex-col sm:mt-3 sm:flex-row sm:items-baseline sm:justify-between sm:gap-3">
+                  <span className="entry-no font-[family-name:var(--font-shoulders)] text-2xl text-arena sm:text-3xl">No. {no(k.no)}</span>
+                  <span className="truncate text-xs sm:text-sm">{k.oleh}</span>
                 </div>
-                <p className="mt-1 text-sm leading-relaxed">{k.catatan}</p>
+                <p className="mt-1 mb-3 flex-1 text-xs leading-relaxed sm:mb-4 sm:text-sm">{k.catatan}</p>
                 {tahap === 1 && (
-                  <button type="button" aria-pressed={fin} disabled={!fin && finalis.length >= MAKS} onClick={() => tandai(k.no)} className={`mt-4 w-full border px-4 py-2.5 text-sm font-semibold disabled:cursor-not-allowed disabled:opacity-50 ${fin ? 'border-ember bg-ember text-cream' : 'border-arena/25 text-arena hover:border-arena'}`}>
+                  <button type="button" aria-pressed={fin} disabled={!fin && finalis.length >= MAKS} onClick={() => tandai(k.no)} className={`w-full border px-2 py-2.5 text-xs font-semibold disabled:cursor-not-allowed disabled:opacity-50 sm:px-4 sm:text-sm ${fin ? 'border-ember bg-ember text-cream' : 'border-arena/25 text-arena hover:border-arena'}`}>
                     {fin ? 'Finalis ✓' : 'Jadikan finalis'}<span className="sr-only"> — karya nomor {k.no}</span>
                   </button>
                 )}
                 {tahap === 2 && fin && (
-                  <button type="button" onClick={() => { setPemenang(k.no); setTahap(3); }} className="mt-4 w-full bg-arena px-4 py-2.5 text-sm font-semibold text-cream hover:bg-ember">
+                  <button type="button" onClick={() => { setPemenang(k.no); setTahap(3); }} className="w-full bg-arena px-2 py-2.5 text-xs font-semibold text-cream hover:bg-ember sm:px-4 sm:text-sm">
                     Tetapkan pemenang<span className="sr-only"> — karya nomor {k.no}</span>
                   </button>
                 )}
                 {tahap === 3 && fin && (
-                  <span className={`stamp judge-label absolute top-3 right-3 bg-white px-3 py-2 ${pemenang === k.no ? 'text-ember' : 'text-laurel'}`}>{pemenang === k.no ? 'Pemenang' : 'Finalis'}</span>
+                  <span className={`stamp judge-label absolute top-2 right-2 bg-white px-2 py-1.5 sm:top-3 sm:right-3 sm:px-3 sm:py-2 ${pemenang === k.no ? 'text-ember' : 'text-laurel'}`}>{pemenang === k.no ? 'Pemenang' : 'Finalis'}</span>
                 )}
               </li>
             );

@@ -7,7 +7,7 @@ const no = (n) => String(n).padStart(2, '0');
 export function Hero() {
   const kipas = [KARYA[2], KARYA[6], KARYA[3]];
   return (
-    <section className="paper-fiber px-6 pt-36 pb-20 md:pt-44 md:pb-28">
+    <section className="paper-fiber px-6 pt-36 pb-16 md:pt-44 md:pb-28">
       <div className="mx-auto grid max-w-6xl items-center gap-14 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)]">
         <div>
           <p className="judge-label text-ember">Kontes desain · lembar penjurian</p>
@@ -17,7 +17,7 @@ export function Hero() {
           </p>
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
             <Link href="#juri" className="inline-flex justify-center bg-ember px-7 py-4 font-semibold text-cream hover:bg-arena">Coba jadi juri</Link>
-            <a href={RESMI} rel="noopener noreferrer" target="_blank" className="inline-flex justify-center border-2 border-arena px-7 py-4 font-semibold text-arena hover:bg-arena hover:text-cream">Mulai kontes di situs resmi<span className="sr-only"> (tab baru)</span> ↗</a>
+            <a href={RESMI} rel="noopener noreferrer" target="_blank" className="inline-flex justify-center gap-1.5 border-2 border-arena px-7 py-4 font-semibold text-arena hover:bg-arena hover:text-cream">Mulai kontes di situs resmi<span className="sr-only"> (tab baru)</span><span aria-hidden="true">↗</span></a>
           </div>
         </div>
         <div aria-hidden="true" className="relative mx-auto h-[22rem] w-full max-w-md">
@@ -39,11 +39,11 @@ export function Hero() {
 
 export function Cara() {
   return (
-    <section id="cara" className="scroll-mt-28 bg-arena px-6 py-20 text-cream md:py-28">
+    <section id="cara" className="scroll-mt-28 bg-arena px-6 py-16 text-cream md:py-28">
       <div className="mx-auto max-w-6xl">
         <p className="judge-label text-cream/80">Cara sayembara bekerja</p>
         <h2 className="mt-4 max-w-2xl font-[family-name:var(--font-shoulders)] text-5xl leading-[0.95] font-extrabold uppercase text-cream md:text-6xl">Empat tahap dari brief ke cap pemenang</h2>
-        <ol className="mt-12 grid gap-10 md:grid-cols-2 lg:grid-cols-4">
+        <ol className="mt-10 grid gap-8 md:mt-12 md:grid-cols-2 md:gap-10 lg:grid-cols-4">
           {TAHAP.map(([j, d], i) => (
             <li key={j} className="border-t-2 border-cream/25 pt-5">
               <span className="entry-no font-[family-name:var(--font-shoulders)] text-6xl text-ember-light">{no(i + 1)}</span>
@@ -59,7 +59,7 @@ export function Cara() {
 
 export function Cocok() {
   return (
-    <section className="paper-fiber px-6 py-20 md:py-28">
+    <section className="paper-fiber px-6 py-16 md:py-28">
       <div className="mx-auto max-w-6xl">
         <p className="judge-label text-ember">Sebelum memulai</p>
         <h2 className="mt-4 max-w-2xl font-[family-name:var(--font-shoulders)] text-5xl leading-[0.95] font-extrabold uppercase text-arena md:text-6xl">Kontes tidak cocok untuk semua hal</h2>
@@ -81,7 +81,7 @@ export function Cocok() {
 
 export function CatatanTeaser() {
   return (
-    <section className="border-t border-arena/10 bg-cream-2 px-6 py-20 md:py-24">
+    <section className="border-t border-arena/10 bg-cream-2 px-6 py-16 md:py-24">
       <div className="mx-auto grid max-w-6xl items-end gap-10 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,0.8fr)]">
         <div>
           <p className="judge-label text-ember">Catatan redesain</p>

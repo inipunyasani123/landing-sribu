@@ -4,7 +4,7 @@ import { CATATAN, SITE } from '@/lib/sayembara';
 
 export const metadata = {
   title: 'Catatan Redesain',
-  description: 'Apa yang diubah dalam konsep redesain tidak resmi landing page Sribu, dan alasannya: klaim tak terverifikasi dibuang, galeri diganti karya contoh SVG, simulasi juri ditambahkan.',
+  description: 'Yang diubah dalam konsep redesain tidak resmi landing page Sribu, dan alasannya: klaim tak terverifikasi dibuang, galeri jadi karya SVG, ada simulasi juri.',
   alternates: { canonical: `${SITE}/catatan-redesain` },
 };
 

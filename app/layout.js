@@ -11,7 +11,7 @@ const __jsonld = {"@context":"https://schema.org","@type":"CreativeWork","name":
 export const metadata = {
   metadataBase: new URL("https://landing-sribu.pintuweb.id"),
   title: { default: "Sribu — Konsep Redesain Tidak Resmi", template: "%s — Konsep Redesain Sribu" },
-  description: "Konsep redesain tidak resmi landing page Sribu oleh PintuWeb: kontes desain sebagai sayembara, dengan simulasi “Coba jadi juri”. Tidak berafiliasi dengan Sribu.",
+  description: "Konsep redesain tidak resmi landing page Sribu oleh PintuWeb: kontes desain sebagai sayembara dengan simulasi juri. Tidak berafiliasi dengan Sribu.",
   applicationName: "Konsep Redesain Sribu",
   keywords: ["konsep redesain", "redesain landing page", "studi kasus UI", "kontes desain", "portofolio web"],
   authors: [{ name: "PintuWeb", url: "https://www.pintuweb.id" }],
@@ -24,13 +24,13 @@ export const metadata = {
     url: "https://landing-sribu.pintuweb.id",
     siteName: "Konsep Redesain Sribu",
     title: "Sribu — Konsep Redesain Tidak Resmi",
-    description: "Konsep redesain tidak resmi landing page Sribu oleh PintuWeb: kontes desain sebagai sayembara, dengan simulasi “Coba jadi juri”. Tidak berafiliasi dengan Sribu.",
+    description: "Konsep redesain tidak resmi landing page Sribu oleh PintuWeb: kontes desain sebagai sayembara dengan simulasi juri. Tidak berafiliasi dengan Sribu.",
     images: [{ url: "/og.jpg", width: 1200, height: 630, alt: "Sribu — Konsep Redesain Tidak Resmi" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Sribu — Konsep Redesain Tidak Resmi",
-    description: "Konsep redesain tidak resmi landing page Sribu oleh PintuWeb: kontes desain sebagai sayembara, dengan simulasi “Coba jadi juri”. Tidak berafiliasi dengan Sribu.",
+    description: "Konsep redesain tidak resmi landing page Sribu oleh PintuWeb: kontes desain sebagai sayembara dengan simulasi juri. Tidak berafiliasi dengan Sribu.",
     images: ["/og.jpg"],
   },
   // Konsep tidak resmi untuk merek nyata: jangan bersaing dengan situs resminya di mesin pencari.
@@ -47,7 +47,7 @@ export default function RootLayout({ children }) {
         <SiteFooter />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(__jsonld) }} />
         <aside aria-label="Tentang situs demo ini" style={{ display: 'block', margin: 0, padding: '12px 16px', background: '#0f1b33', color: '#dfe6f3', font: '400 13px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif', textAlign: 'center' }}>
-          Konsep redesain tidak resmi buatan PintuWeb — tidak berafiliasi dengan Sribu.{' '}
+          Situs demo buatan PintuWeb — konsep redesain tidak resmi, tidak berafiliasi dengan Sribu.{' '}
           <a href="https://www.pintuweb.id/kontak?demo=sribu" style={{ color: '#ffffff', fontWeight: 600, textDecoration: 'underline', textUnderlineOffset: '3px' }}>Buat yang seperti ini →</a>
         </aside>
       </body>

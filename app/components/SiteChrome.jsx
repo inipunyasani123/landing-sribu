@@ -10,14 +10,14 @@ export function SiteHeader() {
       </p>
       <div className="border-b border-arena/10 bg-cream/95 backdrop-blur-md">
         <div className="mx-auto flex h-14 max-w-6xl items-center justify-between gap-6 px-6">
-          <Link href="/" className="flex items-baseline gap-2 text-arena">
+          <Link href="/" className="flex items-baseline gap-2 py-2 text-arena">
             <span className="font-[family-name:var(--font-shoulders)] text-2xl font-extrabold uppercase tracking-wide">Sribu</span>
             <span className="judge-label text-sepia">konsep</span>
           </Link>
           <nav aria-label="Navigasi utama" className="flex items-center gap-5 sm:gap-8">
-            <Link href="/#cara" className="hidden text-sm font-semibold text-sepia hover:text-arena sm:inline">Cara kerja</Link>
-            <Link href="/catatan-redesain" className="hidden text-sm font-semibold text-sepia hover:text-arena sm:inline">Catatan redesain</Link>
-            <Link href="/#juri" className="bg-arena px-4 py-2.5 text-sm font-semibold text-cream hover:bg-ember">Coba jadi juri</Link>
+            <Link href="/#cara" className="hidden py-2 text-sm font-semibold text-sepia hover:text-arena sm:inline">Cara kerja</Link>
+            <Link href="/catatan-redesain" className="hidden py-2 text-sm font-semibold text-sepia hover:text-arena sm:inline">Catatan redesain</Link>
+            <Link href="/#juri" className="inline-flex h-11 items-center bg-arena px-4 text-sm font-semibold text-cream hover:bg-ember">Coba jadi juri</Link>
           </nav>
         </div>
       </div>
@@ -37,11 +37,11 @@ export function SiteFooter() {
         </div>
         <nav aria-label="Halaman">
           <p className="judge-label mb-4 text-cream/80">Halaman</p>
-          <ul className="space-y-2.5 text-sm text-cream/80">
-            <li><Link href="/#cara" className="hover:text-cream">Cara sayembara bekerja</Link></li>
-            <li><Link href="/#juri" className="hover:text-cream">Coba jadi juri</Link></li>
-            <li><Link href="/catatan-redesain" className="hover:text-cream">Catatan redesain</Link></li>
-            <li><a href={RESMI} rel="noopener noreferrer" target="_blank" className="hover:text-cream">Situs resmi Sribu<span className="sr-only"> (tab baru)</span> ↗</a></li>
+          <ul className="space-y-1 text-sm text-cream/80">
+            <li><Link href="/#cara" className="inline-block py-1.5 hover:text-cream">Cara sayembara bekerja</Link></li>
+            <li><Link href="/#juri" className="inline-block py-1.5 hover:text-cream">Coba jadi juri</Link></li>
+            <li><Link href="/catatan-redesain" className="inline-block py-1.5 hover:text-cream">Catatan redesain</Link></li>
+            <li><a href={RESMI} rel="noopener noreferrer" target="_blank" className="inline-block py-1.5 hover:text-cream">Situs resmi Sribu<span className="sr-only"> (tab baru)</span> ↗</a></li>
           </ul>
         </nav>
       </div>
